@@ -1,0 +1,238 @@
+:root{
+    --dark-bg: rgba(0,0,0,.7);
+    --main-color: #8e44ad;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--dark-bg);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    line-height: 2em;
+    box-sizing: border-box;
+    border-radius: 5em;
+    margin: 0.5em 0.5em 0em 0.5em;
+}
+header
+{
+    width: 40%;
+    color: rgb(33, 52, 116);
+    font-weight: bold;    
+    font-size: 2em;
+    border-bottom: 2px solid;
+}
+#login{
+    font-size: 0.5em;
+    font-weight: initial;
+    float: right;
+}
+#login a{
+    color: rgb(33, 52, 116);
+    text-decoration: none;
+}
+#menu
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+#menu li
+{
+    margin: 1em 1em;
+    display: inline;
+    
+}
+#menu li a
+{
+    text-decoration: none;
+    color: rgb(33, 52, 116);
+    font-weight: bold; 
+}
+#menu li a:hover{
+    color:#0c171a;
+}
+#menu-btn{
+    display: none;
+    padding: 1em;
+    color: #213474;
+}
+#menu-close-btn{
+    display: none;
+    padding: 1em;
+    color: #213474;
+}
+#acilirMenu{
+   display: none;
+   list-style-type: none;
+   width: 100%;
+   text-align: center;
+   float: left;
+   padding: 2em;
+}
+.secenek{
+    background-color:#b8c8ff; 
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 5em;
+}
+.secenek a{
+    color:rgb(33, 52, 116);
+    text-decoration: none;
+    font-weight: bold; 
+}
+.secenek a:hover{
+    color:#0c171a;
+}
+#anaSekmeKirklareli{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1em 0px 0px 0px;
+}
+section{
+    width: 68%;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block;
+}
+#responsive-menu-btnOpen{
+    display: none; 
+    float: right;
+}
+#responsive-menu-btnClose{
+    display: none; 
+    float: right;
+}
+#menuArticle{
+    width: 30%;
+    background-color: #b8c8ff;
+    display: none;
+    float: right;
+    overflow: auto;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0.5em;
+}
+#menuArticle h3{
+    text-align: center;
+    color: #213474;
+}
+.icYanciArticle{
+    border: 1px solid black;
+    border-radius: 1em;
+    margin: 1em 0em;
+}
+.articleBoxKirklareli{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    display: inline-block;
+
+}
+#fakeImage{
+    width: 100%;
+    height: 40vh;
+    background-color: gray;
+}
+aside{
+    width: 30%;
+    background-color: #b8c8ff;
+    display: inline-block;
+    float: right;
+    overflow: auto;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0.5em;
+}
+aside h3{
+    text-align: center;
+    color: #213474;
+}
+.kirklareliArticle{
+    border: 1px solid black;
+    border-radius: 1em;
+    margin: 1em 0em;
+}
+button h6{
+    
+    color: #213474;
+    display: block;
+    text-align: center;
+   
+}
+button p{
+    float: left;
+   
+}
+footer{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    background-color: black;
+    color: whitesmoke;
+    position: sticky;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+}
+
+
+
+
+
+@media only screen and (max-width: 1090px){
+    header{
+        width: 100%;
+    }
+    #menu{
+        display: none;
+    }
+    #menu-btn{
+        display: inline;
+    }
+    section{
+        width: 100%;
+    }
+    .articleBoxKirklareli{
+        width: 100%;
+        margin: 0.1em;
+    }
+    aside{
+        display: none;
+     }
+     #menuArticle{
+         width: 100%;
+         margin: 0.1em;
+     }
+     #responsive-menu-btnOpen{
+         display: inline;
+         float: right;
+     }
+   
+}
